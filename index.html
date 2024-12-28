@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+  body {
+      position: relative; 
+  }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+  
+  <div class="ezy__nav5 gray">
+    <nav class="navbar navbar-expand-lg flex-column  py-3">
+      <div class="container">
+        <a class="navbar-brand text-capitalize" href="#">
+          electroni.com
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ezy_nav5-navbar-text"
+          aria-controls="ezy_nav5-navbar-text" aria-expanded="false" aria-label="Toggle navigation">
+          <span>
+            <span></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="ezy_nav5-navbar-text">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-4 mt-lg-0">
+            <li class="nav-item"><a class="nav-link active fs-5 fw-bolder text-capitalize" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link fs-5 fw-bolder text-capitalize" href="#Category">Product</a></li>
+            <li class="nav-item"><a class="nav-link fs-5 fw-bolder text-capitalize" href="#pordects">Why us</a></li>
+            <li class="nav-item"><a class="nav-link fs-5 fw-bolder text-capitalize" href="#top">Category</a></li>
+            <li class="nav-item"><a class="nav-link fs-5 fw-bolder  text-capitalize" href="#discout">discout</a></li>
+            <li class="nav-item"><a class="nav-link fs-5 fw-bolder text-capitalize" href="#popular">Popular</a></li>
+            <li class="nav-item"><a class="nav-link fw-bolder fs-5 text-capitalize" href="#big">phone</a></li>
+            <li class="nav-item"><a class="nav-link fw-bolder fs-5 text-capitalize" href="#blog">blog</a></li>
+
+          </ul>
+          <ul class="navbar-nav flex-row mb-2 mb-lg-0">
+            <li class="nav-item me-2">
+              <button class="btn btn-light px-3"><span class="fas fa-shopping-cart"></span></button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-light px-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <span class="fas fa-search"></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="collapse w-100" id="collapseExample">
+          <form class="mt-4">
+            <div class="input-group">
+              <input class="form-control px-3" type="search" placeholder="City, Address, Zip" aria-label="Search" />
+              <button class="btn ezy__nav5-btn px-3" type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <style>
+
+/* navbar  start*/    
+  .ezy__nav5 {
+
+    /* Bootstrap variables */
+    --bs-body-color: #DE3163;
+    --bs-body-bg: rgb(255, 255, 255);
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color:#DE3163;
+    --ezy-theme-color-rgb:#212529;
+  
+  
+    background-color: var(--bs-body-bg);
+  }
+  
+  /* Gray Block Style */
+  .gray .ezy__nav5,
+  .ezy__nav5.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__nav5,
+  .ezy__nav5.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(30, 39, 53);
+  }
+  
+  
+  /* Dark Block Style */
+  .dark .ezy__nav5,
+  .ezy__nav5.dark {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(11, 23, 39);
+  
+  }
+  
+  .ezy__nav5 .navbar-brand {
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__nav5 .navbar-toggler {
+    border: none;
+    box-shadow: none !important;
+  }
+  
+  .ezy__nav5 .navbar-toggler>span {
+    display: flex;
+    align-items: center;
+    height: 32px;
+  }
+  
+  .ezy__nav5 .navbar-toggler>span>span {
+    position: relative;
+  }
+  
+  .ezy__nav5 .navbar-toggler>span>span,
+  .ezy__nav5 .navbar-toggler>span>span::before,
+  .ezy__nav5 .navbar-toggler>span>span::after {
+    height: 2px;
+    background-color: var(--bs-body-color);
+    width: 25px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all .35s ease-in-out;
+  }
+  
+  .ezy__nav5 .navbar-toggler>span>span::before,
+  .ezy__nav5 .navbar-toggler>span>span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+  }
+  
+  .ezy__nav5 .navbar-toggler[aria-expanded="false"]>span>span::before {
+    top: 7px;
+  }
+  
+  .ezy__nav5 .navbar-toggler[aria-expanded="false"]>span>span::after {
+    bottom: 7px;
+  }
+  
+  .ezy__nav5 .navbar-toggler[aria-expanded="true"]>span>span {
+    background-color: transparent;
+  }
+  
+  .ezy__nav5 .navbar-toggler[aria-expanded="true"]>span>span::before {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .ezy__nav5 .navbar-toggler[aria-expanded="true"]>span>span::after {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  .ezy__nav5 .navbar-nav .nav-link {
+    color: var(--bs-body-color);
+    opacity: .6;
+  }
+  
+  .ezy__nav5 .navbar-nav .nav-link:hover,
+  .ezy__nav5 .navbar-nav .nav-link:focus,
+  .ezy__nav5 .navbar-nav .nav-link.active {
+    color: var(--bs-body-color);
+    opacity: 1;
+  }
+  
+  @media (min-width: 992px) {
+    .ezy__nav5 .navbar-nav .nav-link {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+  
+  .ezy__nav5 .btn {
+    border-radius: 10px;
+  }
+  
+  .ezy__nav5-btn {
+    background-color: var(--ezy-theme-color);
+    color: #fff;
+  }
+ 
+  .ezy__nav5 .btn-light {
+    background-color: var(--ezy-theme-color);
+    border-color: var(--ezy-theme-color);
+    color: #fff;
+  }
+  
+ 
+
+  .ezy__nav5 .form-control {
+    min-height: 48px;
+    line-height: 40px;
+    border-color: transparent;
+    background: #DE3163;
+    border-radius: 10px;
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__nav5 .form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: none;
+  }
+
+
+  
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+.navbar .navbar-nav .nav-item:before, .navbar .navbar-nav .nav-item:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+  
+    content: '';
+    background: #DE3163;
+    transition: all 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar .navbar-nav .nav-item:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+.navbar .navbar-nav .nav-item:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+.navbar .navbar-nav .nav-item:hover:before, .navbar .navbar-nav .nav-item:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+
+
+
+
+  /* and the navbar*/
+  </style>
+      
+
+
+<!-- teb content -1 -->
+<div id="home"  data-aos="fade-up"
+data-aos-anchor-placement="top-bottom">
+    <!-- start the header part -->
+
+
+   <style>
+
+
+
+
+    .ezy__header5 {
+  /* Bootstrap variables */
+  --bs-body-color: rgb(201, 184, 184);
+  --bs-body-bg:  #DE3163;
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+
+  background-color: var(--bs-body-bg);
+  overflow: hidden;
+  padding: 60px 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .ezy__header5 {
+    padding: 100px 0;
+  }
+}
+
+.ezy__header5-heading {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .ezy__header5-heading {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+.ezy__header5-sub-heading {
+  color: var(--bs-body-color);
+  font-size: 22px;
+  line-height: 1.5;
+  opacity: 0.8;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+    
+   </style> 
+
+
+ 
+<section class="ezy__header5"">
+  
+  <div class="container position-relative">
+    <div class="row align-items-center">
+      <div class="col-lg-6 pe-xl-5 text-center text-lg-start">
+        <h2 class="ezy__header5-heading mb-4 animate__animated animate__backInDown">Apple Watch series</h2>
+        <p class="ezy__header5-sub-heading animate__animated  animate__backInLeft">
+
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatum maxime rerum voluptatem, molestias doloremque repudiandae facere praesentium id veritatis? Numquam cupiditate earum dolorem, ab amet voluptatum natus soluta tempore.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione aperiam amet labore excepturi nisi in rem nobis 
+        </p>
+        <a href="" class="btn  text-dark xyz___btn fs-5 mt-4 mt-md-5 animate__animated  animate__backInUp  text-capitalize fw-4 fw-bolder" style="background-color:rgb(201, 184, 184);">shop Now <span
+            class="fas fa-arrow-right ms-2"></span></a>
+      </div>
+      <div class="col-lg-6 mt-5 mt-lg-0 text-center text-lg-start">
+        <img class="img-fluid animate__animated  animate__backInRight" src="https://www.pngall.com/wp-content/uploads/4/Headphone-Transparent-PNG.png" height="500px" alt="" class="rounded img-fluid mt-3"/>
+      </div>
+    </div>
+  </div>
+</section>
+            
+
+</div>
+
+<!-- and the teb content -1 -->
+
+
+<!-- teb-content-2 -->
+<div id="Category" data-aos="fade-right">
+
+
+  <section class="ezy__epcategory1 light">
+    <div class="container">
+      <h2 class="ezy__epcategory1-heading text-center display-2 fw-bold  text-capitalize fs-1 fw-bolder"> <b> Product Category </b></h2>
+  
+      <div class="row mt-4 mt-md-5 ezy__epcategory1-row">
+        <!-- card start -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-1">
+          <a href="">
+            <div class="card ezy__epcategory1-card p-2">
+              <div class="ezy_ecategory1-card-img d-flex justify-content-center align-items-center py-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWPtcyObufPtY2GtTkbbyHnF3rLGJUiHBu0ijwD9bzkNVQuSaBHcM6FuemIvQcPYJecs&usqp=CAU" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class=" text-center m-0 text-capitalize fs-3 fw-bolder" >Speaker</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-1">
+          <a href="">
+            <div class="card ezy__epcategory1-card p-2">
+              <div class="ezy_ecategory1-card-img d-flex justify-content-center align-items-center py-3">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRyy9XHxoyLgbK6wSAOujJ94MnMjVTxs61KCFI4BLA2fvq_NZUhAZvm5S2ZgKPAdO-GbK5oUh6y9xoi8uIeHpF7C8zIMPJzm74ahLQMSsJ3kW96dF1ZPraFM1UCVQniQXDybaGSvi2rIQ&usqp=CAc" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class=" text-center ezy__epcategory1-title m-0 text-capitalize fs-3 fw-bolder">apple phone</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-1">
+          <a href="">
+            <div class="card ezy__epcategory1-card p-2">
+              <div class="ezy_ecategory1-card-img d-flex justify-content-center align-items-center py-3">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSK4GuuThIGvlUkjaTV7SodcjrMFBmHnj2EkjFGunreSxjKnLQg0Pb1LouoEpcLkcoYZdqmZsAkuAV7YyDdo2gF-TkudVNCcoJUBy1v8sBeGNwhBPWzS-n7Z40sVVZaunRr4tCKNQ&usqp=CAc" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="text-center ezy__epcategory1-title m-0 text-capitalize fs-3 fw-bolder">teblet</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-1">
+          <a href="">
+            <div class="card ezy__epcategory1-card p-2">
+              <div class="ezy_ecategory1-card-img d-flex justify-content-center align-items-center py-3">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSKCsM72kjldqkbPS56ol_qtYn3ROob5nrcvBEROTY2nDVhvLD5tzNra6gKCd2D3k7dtCGEorzgGHWH9fAlaHVhSGQH7W6idPTpRYrjX9Sa9za6DvVfW93E8g&usqp=CAE" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="ezy__epcategory1-title m-0 text-center text-capitalize fs-3 fw-bolder">headphones</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-1">
+          <a href="">
+            <div class="card ezy__epcategory1-card p-2">
+              <div class="ezy_ecategory1-card-img d-flex justify-content-center align-items-center py-3">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT6KYq7UoAt77WNYkpGGECVo7-cxMsJa2mfk5pOPiS0-0-ol-rZCdXFM_hyrq2s5AsMPmKwoBFTKJ0cRuKo9r86iuLWvgV3X6ppowQE_Efzr5y327oIWhMi&usqp=CAE" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="ezy__epcategory1-title m-0 text-center text-capitalize fs-3 fw-bolder">leptop</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-1">
+          <a href="">
+            <div class="card ezy__epcategory1-card p-2">
+              <div class="ezy_ecategory1-card-img d-flex justify-content-center align-items-center py-3">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTCnV_P8c5BSqRoTkrfx--ms-ER8sWAXjAkWDKFxJfYLuDHTRhT2RpcmHF6OGbg_KliRZnDxwSZ_Z3UqafCysS_q7FXKlb3qkgIuOy9OHMVv1IRs2VODaLgI7fy1-fO9W1LPT6VGQ&usqp=CAc" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="ezy__epcategory1-title m-0 text-capitalize fs-3 fw-bolder">eyrebords</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- card end -->
+      </div>
+  
+     
+    </div>
+  </section>
+  
+  <style>
+  .ezy__epcategory1 {
+    /* Bootstrap variables */
+    --bs-body-color: #23262f;
+    --bs-body-bg: #ffffff;
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: 13, 110, 253;
+    --ezy-img-bg:#fff ;
+    --ezy-card-bg: #fff;
+  
+    background-color: var(--bs-body-bg);
+    padding: 60px 0;
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__epcategory1 {
+      padding: 100px 0;
+    }
+  }
+  
+  /* Gray Block Style */
+  .gray .ezy__epcategory1,
+  .ezy__epcategory1.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__epcategory1,
+  .ezy__epcategory1.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(30, 39, 53);
+  
+    /* Easy Frontend variables */
+    --ezy-card-bg: #162231;
+  }
+  
+  /* Dark Block Style */
+  .dark .ezy__epcategory1,
+  .ezy__epcategory1.dark {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(11, 23, 39);
+  
+    /* Easy Frontend variables */
+    --ezy-card-bg: #162231;
+  }
+  
+  .ezy__epcategory1 a {
+    text-decoration: none;
+  }
+  
+  .ezy__epcategory1-card {
+    border-radius: 10px;
+    background-color: var(--ezy-card-bg);
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .ezy__epcategory1-heading
+   {
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 700;
+    color: var(--bs-body-color);
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #DE3163;
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__epcategory1-heading {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+  
+  .ezy_ecategory1-card-img {
+    background-color: var(--ezy-img-bg);
+    height: 152px;
+    width: auto;
+    border-radius: 10px;
+  }
+  
+  .ezy__epcategory1-title {
+    font-size: 18px;
+    color: var(--bs-body-color);
+  }
+  
+  .ezy_ecategory1-card-img img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+  }
+  
+  .ezy__epcategory1-btn {
+    padding: 10px 45px;
+    background-color: var(--ezy-theme-color);
+    border-color: var(--ezy-theme-color);
+  }
+  
+  .ezy__epcategory1-btn:hover {
+    background-color:  #DE3163;
+    border-color:  #DE3163;
+  }
+  
+  .ezy__epcategory1-row {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+  </style>   
+      
+</div>
+
+<!-- the and tab-content -->
+
+
+<!-- teb-content -3 -->
+<div id="pordects" data-aos="fade-left">
+  
+  <section class="ezy__epother5 light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 text-center">
+          <h1 class="ezy__epother5-heading">Know about our product</h1>
+       
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 ">
+          <div class="card border-0 mt-5">
+            <div class="card-body py-3">
+              <div class="text-center mt-lg-3 rounded-4 "  style="background-color:#DE3163;">
+                 <div class="mt-3">  <h2 class="text-center  display-6 ezy__epother5-heading  text-white text-capitalize fw-bolder py-3">just starting at $500 </h2> 
+                  <button class="button button3  rounded-3  text-capitalize fs-5 fw-bolder">shop now</button></div>
+                <img
+                  src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Music-PNG/Headset_Transparent_Image-1838141271.png?m=1629832543"
+                  alt="img" height="500px" width="40%" class="img-fluid rounded-4 "/>
+              </div>
+
+             
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12 col-md-6">
+          <div class="card border-0 mt-5">
+            <div class="card-body py-3">
+              <div class="text-center mt-lg-3 rounded-4" style="background-color:#DE3163;">
+                <div class="mt-3"> <h2 class="text-center  display-6 ezy__epother5-heading text-white text-capitalize fw-bolder py-3 ">just starting at $500 </h2>
+                  <button class="button button3  rounded-3 text-capitalize fs-5 fw-bolder">shop now</button></div>
+                <img
+                   class=" img-fluid rounded-4 "src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Music-PNG/Headset_PNG_Clipart.png?m=1629808544"  height="500px" width="45%"/>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  .ezy__epother5 {
+    /* Bootstrap variables */
+    --bs-body-color: #28303b;
+    --bs-body-bg: rgb(255, 255, 255);
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: 13, 110, 253;
+  
+    background: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    overflow: hidden;
+    padding: 60px 0;
+  }
+  
+  @media (min-width: 992px) {
+    .ezy__epother5 {
+      padding: 100px 0;
+    }
+  }
+  
+  /* Gray Block Style */
+  .gray .ezy__epother5,
+  .ezy__epother5.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__epother5,
+  .ezy__epother5.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(30, 39, 53);
+  }
+  
+  /* Dark Block Style */
+  .dark .ezy__epother5,
+  .ezy__epother5.dark {
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(11, 23, 39);
+  }
+  
+  .ezy__epother5-heading {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #DE3163;
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__epother5-heading {
+      font-size: 45px;
+    }
+  }
+  
+  .ezy__epother5-sub-heading {
+    font-size: 18px !important;
+    line-height: 1.5;
+  }
+  
+  .ezy__epother5 .card {
+    background-color: transparent;
+  }
+  
+  .ezy__epother5 p {
+    font-size: 17px;
+    opacity: 0.7;
+  }
+
+
+  .button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid whitesmoke;
+}
+
+.button3:hover {
+  background-color: #DE3163;
+  color: white;
+  border-color: white;
+}
+
+  </style>
+                  
+            
+  
+  
+     
+</div>
+
+<!-- the teb-contenet -->
+
+
+
+<!-- teb content -4 -->
+<div id="top" data-aos="fade-right">
+    
+  <section class="ezy__epcategory9 light">
+    <!-- shapes -->
+    <div class="position-absolute top-0 end-0">
+      <img src="https://cdn.easyfrontend.com/pictures/ecommerce/grid_10_shape1.png" alt="" />
+    </div>
+  
+    <div class="container position-relative">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center mb-5">
+          <h2 class="ezy__epcategory9-heading text-capitalize fs-1 fw-bolder">Top Category</h2>
+        </div>
+  
+        <div class="col-12 mt-5">
+          <div id="ezy__epcategory9-controls" class="carousel slide position-relative" data-ride="carousel">
+            <div class="carousel-inner overflow-visible">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-12 col-md-3 my-5">
+                    <a href="#!" class="ezy__epcategory9-item">
+                      <div class="ezy__epcategory9-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTunbVxFYY8f9avAjswYkWASh5dK6myWpZ93Q&s" alt="" />
+                      </div>
+                      <h4 class="mb-4 text-capitalize fs-5 fw-bolder">Watch</h4>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3 my-5">
+                    <a href="#!" class="ezy__epcategory9-item">
+                      <div class="ezy__epcategory9-img">
+                        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQOwrNgbah2fpVqBShJUTpMBBLiYsf8-RdWlsFrZCy-JuOucDWrUYBbKz-pV61qQAltPk9ZEr754mcTeNcUajuE0dvCYNiWH-wsv7iGEnc&usqp=CAE" alt="" />
+                      </div>
+                      <h4 class="mb-4 text-capitalize fs-5 fw-bolder">laptop</h4>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3 my-5">
+                    <a href="#!" class="ezy__epcategory9-item">
+                      <div class="ezy__epcategory9-img">
+                        <img src="data:image/jpeg;base64,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" alt="" />
+                      </div>
+                      <h4 class="mb-4 text-capitalize fs-5 fw-bolder">Speaker</h4>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3 my-5">
+                    <a href="#!" class="ezy__epcategory9-item">
+                      <div class="ezy__epcategory9-img">
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS7ncyxNzDmcdtyuJYWfqrFkl9ns4ZW0x2snWF46pMSCkCa-dAL_zviQWT2lZgEBvwMrqOsblAOVpWwmlSmEoERc0gFLkhAL7KqcIp0QxmrsnJVrGXVQyBnmX1QbuN5sQ&usqp=CAc" alt="" />
+                      </div>
+                      <h4 class="mb-4 text-capitalize fs-5 fw-bolder">wifi</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-12 col-md-3 my-5">
+                    <a href="#!" class="ezy__epcategory9-item">
+                      <div class="ezy__epcategory9-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTunbVxFYY8f9avAjswYkWASh5dK6myWpZ93Q&s" alt="" />
+                      </div>
+                      <h4 class="mb-4 text-capitalize fs-5 fw-bolder">Watch</h4>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3 my-5">
+                    <a href="#!" class="ezy__epcategory9-item">
+                      <div class="ezy__epcategory9-img">
+                        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR-usL_CexL_PrhmX5R18X4znQzglzT_nVZvNhrKIiISEqDdg6zyQgS4NbUaErsuMME2sQvIcieQc5OkCytqKKCXDxhNRJ7e7sU5BpKhEpTirjdqjGRGtk8&usqp=CAE" alt="" />
+                      </div>
+                      <h4 class="mb-4 text-capitalize fs-5 fw-bolder">leptop</h4>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3 my-5">
+                    <a href="#!" class="ezy__epcategory9-item">
+                      <div class="ezy__epcategory9-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSsX20bXUiSzEJPcVbaM28emR-p8BSWum72e47eq5lBrcqn81XB-C2KaZMzNGx5xuhZTupKvsfg0yUwaMN22qiclO4GVaNvKFphI626ik0uuUuntFZC-ZNrx0GHn9Gdad8kPEjbph0&usqp=CAc" alt="" />
+                      </div>
+                      <h4 class="mb-4 text-capitalize fs-5 fw-bolder">eyrebords</h4>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3 my-5">
+                    <a href="#!" class="ezy__epcategory9-item">
+                      <div class="ezy__epcategory9-img">
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTbMEHa7S6msfZkNqz12Z95fbEcfdMsy10WL_CNSMsAAHEDt5qSdJzPAuQXR2YXN9YxzMhA-ZRvRUaDfhzkI3auT3q2x_QkSEf86KBLGD89nenziYJI_mdCtNyizRLlj3h-IljiWfPCX1g&usqp=CAc" alt="" />
+                      </div>
+                      <h4 class="mb-4 text-capitalize fs-5 fw-bolder">leptop</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-12 col-md-3 my-5">
+                    <a href="#!" class="ezy__epcategory9-item">
+                      <div class="ezy__epcategory9-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTunbVxFYY8f9avAjswYkWASh5dK6myWpZ93Q&s" alt="" />
+                      </div>
+                      <h4 class="mb-4text-capitalize fs-5 fw-bolder">Watch</h4>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3 my-5">
+                    <a href="#!" class="ezy__epcategory9-item">
+                      <div class="ezy__epcategory9-img">
+                        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQOwrNgbah2fpVqBShJUTpMBBLiYsf8-RdWlsFrZCy-JuOucDWrUYBbKz-pV61qQAltPk9ZEr754mcTeNcUajuE0dvCYNiWH-wsv7iGEnc&usqp=CAE" alt="" />
+                      </div>
+                      <h4 class="mb-4 text-capitalize fs-5 fw-bolder">leptop</h4>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3 my-5">
+                    <a href="#!" class="ezy__epcategory9-item">
+                      <div class="ezy__epcategory9-img">
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRmCcxcAsXzhvD-hp788SjOsJk5a_z8d5XqoIKo6aHd9Q4ZCni5XZHaK_-ifNgtxFkrXTtJpqviyRzuq9U7U2aFuWJGJS0n&usqp=CAE" alt="" />
+                      </div>
+                      <h4 class="mb-4 text-capitalize fs-5 fw-bolder">leptop</h4>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3 my-5">
+                    <a href="#!" class="ezy__epcategory9-item">
+                      <div class="ezy__epcategory9-img">
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRSQsRK7jX1vMajCF0ICn_b_Sw8-7gQGhf9A-B-tpPxN3lPa5OUKSpn8VQfSX4Wz3rOsk9WR3IhOx1fuFMt5egrljCXQ-MuVjpDTnsoNxoXFqvjaI9NoQSeJskjjwH8DFrPu-l4u0qxzfU&usqp=CAc" alt="" />
+                      </div>
+                      <h4 class="mb-4 text-capitalize fs-5 fw-bolder">eyrebords</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__epcategory9-arrows d-flex align-items-center">
+              <button
+                class="carousel-control-prev ezy__epcategory9-arrow-left me-4"
+                type="button"
+                data-bs-target="#ezy__epcategory9-controls"
+                data-bs-slide="prev"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button
+                class="carousel-control-next ezy__epcategory9-arrow-right"
+                type="button"
+                data-bs-target="#ezy__epcategory9-controls"
+                data-bs-slide="next"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  .ezy__epcategory9 {
+    /* Bootstrap variables */
+    --bs-body-color: #212529;
+    --bs-body-bg: rgb(255, 255, 255);
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: 13, 110, 253;
+    --ezy-card-bg: #ffffff;
+    --ezy-card-shadow: 0px 6px 44px rgba(173, 174, 197, 0.2);
+    --ezy-border-color: #e8e7f3;
+    --ezy-img-bg: #f8f8f8;
+  
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    overflow: hidden;
+    position: relative;
+    padding: 100px 0;
+    z-index: 1;
+  }
+  
+  /* Gray Block Style */
+  .gray .ezy__epcategory9,
+  .ezy__epcategory9.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__epcategory9,
+  .ezy__epcategory9.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(30, 39, 53);
+  
+    /* Easy Frontend variables */
+    --ezy-card-bg: rgb(30, 39, 53);
+    --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+    --ezy-img-bg: #242e3e;
+    --ezy-border-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  /* Dark Block Style */
+  .dark .ezy__epcategory9,
+  .ezy__epcategory9.dark {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(11, 23, 39);
+  
+    /* Easy Frontend variables */
+    --ezy-card-bg: rgb(30, 39, 53);
+    --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+    --ezy-img-bg: #242e3e;
+    --ezy-border-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  .ezy__epcategory9-heading {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #DE3163;
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__epcategory9-heading {
+      font-size: 48px;
+    }
+  }
+  .ezy__epcategory9-item {
+    background-color: var(--ezy-card-bg);
+    box-shadow: var(--ezy-card-shadow);
+    border: 1px solid var(--ezy-border-color);
+    border-radius: 30px 30px 15px 15px;
+    min-height: 155px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .ezy__epcategory9-img {
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--ezy-img-bg);
+    border: 1px solid var(--ezy-border-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+  }
+  .ezy__epcategory9-img img {
+    width: 80px;
+  }
+  
+  .ezy__epcategory9 a {
+    text-decoration: none;
+    color: var(--bs-body-color);
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  .ezy__epcategory9 a:hover h4 {
+    color: #DE3163;
+  }
+  .ezy__epcategory9 a h4 {
+    transition: 0.4s;
+  }
+  .ezy__epcategory9-rating {
+    font-size: 14px;
+    color: #ffd451;
+  }
+  
+  /* arrows */
+  .ezy__epcategory9-arrow-left {
+    position: absolute;
+    top: 100%;
+    left: 30%;
+  }
+  .ezy__epcategory9-arrow-right {
+    position: absolute;
+    top: 100%;
+    right: 30%;
+  }
+  @media (min-width: 768px) {
+    .ezy__epcategory9-arrow-left {
+      left: 40%;
+    }
+    .ezy__epcategory9-arrow-right {
+      right: 40%;
+    }
+  }
+  @media (min-width: 991px) {
+    .ezy__epcategory9-arrow-left {
+      top: 50%;
+      transform: translateY(-50%);
+      left: -3%;
+    }
+    .ezy__epcategory9-arrow-right {
+      top: 50%;
+      transform: translateY(-50%);
+      right: -3%;
+    }
+  }
+  @media (min-width: 1600px) {
+    .ezy__epcategory9-arrow-left {
+      left: -10%;
+    }
+    .ezy__epcategory9-arrow-right {
+      right: -10%;
+    }
+  }
+  
+  .ezy__epcategory9-arrow-left,
+  .ezy__epcategory9-arrow-right {
+    font-size: 24px;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #DE3163 !important;
+    opacity: 0.8 !important;
+  }
+  .ezy__epcategory9-arrow-left:hover,
+  .ezy__epcategory9-arrow-right:hover {
+    color:#DE3163;
+    opacity: 1 !important;
+  }
+  </style>
+
+
+
+
+
+  </div>
+ 
+  
+  <!-- teb-contents -->
+  <div id="discout"  data-aos="flip-left"></div>>
+    
+        <!-- start the discoutn cart -->
+        <style>
+          .dicount{
+           background-color: #86b7fe;
+
+
+          }
+
+          .heading{
+            font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: #DE3163;
+          }
+        </style>
+        
+            
+         </style>
+         <section  class="dicount rounded-3 mt-5" style="background-color: #df074413;">
+           <div class="container h-50">
+             <div  class="row rounded-3 flex-*-nowrap">
+               <div class="col-sm-6 text-center mt-5 heading"> 
+                <h1 class="display-3 mt-2 ms-5">up to discout check out 25 %</h1>
+                 <div class="text-center mt-3 ms-5 mt-5">   <button class="button button3  rounded-4 text-capitalize fs-5 fw-bolder"> buy now </button> </div>
+           
+               
+                 
+                 </div>
+               
+               
+               <div class="col-sm-6  cart-img"  > <img  class="mt-5 img-fluid" src="https://www.aptronixindia.com/media/iphone-15-plus/images/flex_magsafe_large.png?1694035518951" alt=""  style="height:450px;"></div>
+             </div>
+           </div>
+         </section>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  </div>
+  
+  <!-- teb constestn -->
+  <div id="popular"data-aos="flip-down">
+    
+
+    <section class="ezy__epgrid9 light">
+        <!-- shapes -->
+        <div class="position-absolute top-0 end-0">
+          <img src="https://cdn.easyfrontend.com/pictures/ecommerce/grid_9_shape2.png" alt="" />
+        </div>
+        <div class="ezy__epgrid9-shape-one position-absolute top-50 start-0">
+          <img src="https://cdn.easyfrontend.com/pictures/ecommerce/grid_9_shape1.png" alt="" />
+        </div>
+      
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-12 text-center mb-5">
+              <h2 class="ezy__epgrid9-heading text-capitalize fs-1 fw-bolder">Popular Products</h2>
+            </div>
+            <!-- item -->
+            <div class="col-12 col-md-6 col-lg-4 mt-3 mt-md-4">
+              <div class="ezy__epgrid9-item p-3 pb-0">
+                <div class="ezy__epgrid9-img position-relative p-5 w-100">
+                  <h6 class="ezy__epgrid9-item-badge px-4 py-2 mb-0">50%</h6>
+                  <div class="ezy__epgrid9-fav-icon">
+                    <i class="fas fa-heart" style="color:  #DE3163;"></i>
+                  </div>
+                  <img src="https://pngimg.com/uploads/iphone_13/small/iphone_13_PNG27.png" height="200px" alt="" class="img-fluid" />
+                  <button class="btn ezy__epgrid9-cart-btn py-2 px-4 fw-bold"><i class="fa-solid fa-cart-shopping" style="color:  #ffffff;"></i></button>
+                </div>
+                <div class="ezy__epgrid9-content py-4 px-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <a href="#!"><h6 class="mb-1 text-capitalize fs-5 fw-bolder"> apple pohone</h6></a>
+                      <span class="ezy__epgrid9-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <p class="mb-0 fs-3 fw-bold"><button class="button button3 rounded-3 text-capitalize fs-5 fw-bolder">$678</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="col-12 col-md-6 col-lg-4 mt-3 mt-md-4">
+              <div class="ezy__epgrid9-item p-3 pb-0">
+                <div class="ezy__epgrid9-img position-relative p-5 w-100">
+                  <h6 class="ezy__epgrid9-item-badge px-4 py-2 mb-0">50%</h6>
+                  <div class="ezy__epgrid9-fav-icon">
+                    <i class="fas fa-heart" style="color:  #DE3163;"></i>
+                  </div>
+                  <img src="https://pngimg.com/uploads/iphone_13/small/iphone_13_PNG31.png" alt="" class="img-fluid" />
+                  <button class="btn ezy__epgrid9-cart-btn py-2 px-4 fw-bold"><i class="fa-solid fa-cart-shopping" style="color:  #ffffff;"></i></button>
+                </div>
+                <div class="ezy__epgrid9-content py-4 px-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <a href="#!"><h6 class="mb-1 text-capitalize fs-5 fw-bolder">apple phone</h6></a>
+                      <span class="ezy__epgrid9-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <p class="mb-0 fs-3 fw-bold"><button class="button button3 rounded-3 text-capitalize fs-5 fw-bolder">$678</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="col-12 col-md-6 col-lg-4 mt-3 mt-md-4">
+              <div class="ezy__epgrid9-item p-3 pb-0">
+                <div class="ezy__epgrid9-img position-relative p-5 w-100">
+                  <h6 class="ezy__epgrid9-item-badge px-4 py-2 mb-0">50%</h6>
+                  <div class="ezy__epgrid9-fav-icon">
+                    <i class="fas fa-heart" style="color:  #DE3163;"></i>
+                  </div>
+                  <img src="https://pngimg.com/uploads/iphone_13/small/iphone_13_PNG2.png" alt="" class="img-fluid" />
+                  <button class="btn ezy__epgrid9-cart-btn py-2 px-4 fw-bold"><i class="fa-solid fa-cart-shopping" style="color:  #ffffff;"></i></button>
+                </div>
+                <div class="ezy__epgrid9-content py-4 px-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <a href="#!"><h6 class="mb-1 text-capitalize fs-5 fw-bolder">apple phone</h6></a>
+                      <span class="ezy__epgrid9-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <p class="mb-0 fs-3 fw-bold"><button class="button button3 rounded-3 text-capitalize fs-5 fw-bolder">$678</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="col-12 col-md-6 col-lg-4 mt-3 mt-md-4">
+              <div class="ezy__epgrid9-item p-3 pb-0">
+                <div class="ezy__epgrid9-img position-relative p-5 w-100">
+                  <h6 class="ezy__epgrid9-item-badge px-4 py-2 mb-0">50%</h6>
+                  <div class="ezy__epgrid9-fav-icon">
+                    <i class="fas fa-heart" style="color:  #DE3163;"></i>
+                  </div>
+                  <img src="https://pngimg.com/uploads/photo_camera/small/photo_camera_PNG7849.png" alt="" class="img-fluid" />
+                  <button class="btn ezy__epgrid9-cart-btn py-2 px-4 fw-bold"><i class="fa-solid fa-cart-shopping" style="color:  #ffffff;"></i></button>
+                </div>
+                <div class="ezy__epgrid9-content py-4 px-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <a href="#!"><h6 class="mb-1 text-capitalize fs-5 fw-bolder">photo camera</h6></a>
+                      <span class="ezy__epgrid9-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <p class="mb-0 fs-3 fw-bold"><button class="button button3 rounded-3  text-capitalize fs-5 fw-bolder">$678</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="col-12 col-md-6 col-lg-4 mt-3 mt-md-4">
+              <div class="ezy__epgrid9-item p-3 pb-0">
+                <div class="ezy__epgrid9-img position-relative p-5 w-100">
+                  <h6 class="ezy__epgrid9-item-badge px-4 py-2 mb-0">50%</h6>
+                  <div class="ezy__epgrid9-fav-icon">
+                    <i class="fas fa-heart" style="color:  #DE3163;"></i>
+                  </div>
+                  <img src="https://pngimg.com/uploads/selfie_stick/small/selfie_stick_PNG55.png" alt="" class="img-fluid" />
+                  <button class="btn ezy__epgrid9-cart-btn py-2 px-4 fw-bold"><i class="fa-solid fa-cart-shopping" style="color:  #ffffff;"></i></button>
+                </div>
+                <div class="ezy__epgrid9-content py-4 px-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <a href="#!"><h6 class="mb-1 text-capitalize fs-5 fw-bolder">photo stentd</h6></a>
+                      <span class="ezy__epgrid9-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <p class="mb-0 fs-3 fw-bold"><button class="button button3 rounded-3  text-capitalize fs-5 fw-bolder">$678</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="col-12 col-md-6 col-lg-4 mt-3 mt-md-4">
+              <div class="ezy__epgrid9-item p-3 pb-0">
+                <div class="ezy__epgrid9-img position-relative p-5 w-100">
+                  <h6 class="ezy__epgrid9-item-badge px-4 py-2 mb-0">50%</h6>
+                  <div class="ezy__epgrid9-fav-icon">
+                    <i class="fas fa-heart" style="color:  #DE3163;"></i>
+                  </div>
+                  <img src="https://pngimg.com/uploads/computer_mouse/small/computer_mouse_PNG7701.png" alt="" class="img-fluid" />
+                  <button class="btn ezy__epgrid9-cart-btn py-2 px-4 fw-bold"><i class="fa-solid fa-cart-shopping" style="color:  #ffffff;"></i></button>
+                </div>
+                <div class="ezy__epgrid9-content py-4 px-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <a href="#!"><h6 class="mb-1 text-capitalize fs-5 fw-bolder">mouse</h6></a>
+                      <span class="ezy__epgrid9-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <p class="mb-0 fs-3 fw-bold"><button class="button button3 rounded-3 text-capitalize fs-5 fw-bolder" >$678</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="col-12 col-md-6 col-lg-4 mt-3 mt-md-4">
+              <div class="ezy__epgrid9-item p-3 pb-0">
+                <div class="ezy__epgrid9-img position-relative p-5 w-100">
+                  <h6 class="ezy__epgrid9-item-badge px-4 py-2 mb-0">50%
+                  </h6>
+                  <div class="ezy__epgrid9-fav-icon">
+                    <i class="fas fa-heart" style="color:  #DE3163;"></i>
+                  </div>
+                  <img src="https://pngimg.com/uploads/tripod/small/tripod_PNG144.png" alt="" class="img-fluid" />
+                  <button class="btn ezy__epgrid9-cart-btn py-2 px-4 fw-bold"><i class="fa-solid fa-cart-shopping" style="color:  #ffffff;"></i></button>
+                </div>
+                <div class="ezy__epgrid9-content py-4 px-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <a href="#!"><h6 class="mb-1 text-capitalize fs-5 fw-bolder">mobile stentd</h6></a>
+                      <span class="ezy__epgrid9-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <p class="mb-0 fs-3 fw-bold"><button class="button button3 rounded-3 text-capitalize fs-5 fw-bolder">$678</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="col-12 col-md-6 col-lg-4 mt-3 mt-md-4">
+              <div class="ezy__epgrid9-item p-3 pb-0">
+                <div class="ezy__epgrid9-img position-relative p-5 w-100">
+                  <h6 class="ezy__epgrid9-item-badge px-4 py-2 mb-0">50%</h6>
+                  <div class="ezy__epgrid9-fav-icon">
+                    <i class="fas fa-heart" style="color:  #DE3163;"></i>
+                  </div>
+                  <img src="https://pngimg.com/uploads/web_camera/small/web_camera_PNG7983.png" alt="" class="img-fluid" />
+                  <button class="btn ezy__epgrid9-cart-btn py-2 px-4 fw-bold"><i class="fa-solid fa-cart-shopping" style="color:  #ffffff;"></i></button>
+                </div>
+                <div class="ezy__epgrid9-content py-4 px-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <a href="#!"><h6 class="mb-1 text-capitalize fs-5 fw-bolder">web_camera</h6></a>
+                      <span class="ezy__epgrid9-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <p class="mb-0 fs-3 fw-bold"><button class="button button3 rounded-3 text-capitalize fs-5 fw-bolder">$678</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="col-12 col-md-6 col-lg-4 mt-3 mt-md-4">
+              <div class="ezy__epgrid9-item p-3 pb-0">
+                <div class="ezy__epgrid9-img position-relative p-5 w-100">
+                  <h6 class="ezy__epgrid9-item-badge px-4 py-2 mb-0"><b> 50% </b></h6></h6>
+                  <div class="ezy__epgrid9-fav-icon">
+                    <i class="fas fa-heart" style="color:  #DE3163;"></i>
+                  </div>
+                  <img src="https://pngimg.com/uploads/printer/small/printer_PNG7741.png" alt="" class="img-fluid" />
+                  <button class="btn ezy__epgrid9-cart-btn py-2 px-4 fw-bold "><i class="fa-solid fa-cart-shopping" style="color:  #ffffff;"></i></button>
+                </div>
+                <div class="ezy__epgrid9-content py-4 px-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <a href="#!"><h6 class="mb-1 text-capitalize fs-5 fw-bolder">printer</h6></a>
+                      <span class="ezy__epgrid9-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <p class="mb-0 fs-3 fw-bold"><button class="button button3 rounded-3 text-capitalize fs-5 fw-bolder">$678</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <style>
+      .ezy__epgrid9 {
+              /* Bootstrap variables */
+              --bs-body-color: #212529;
+              --bs-body-bg: rgb(255, 255, 255);
+      
+              /* Easy Frontend variables */
+              --ezy-theme-color: #DE3163;
+              --ezy-theme-color-rgb: 13, 110, 253;
+              --ezy-card-bg: #ffffff;
+              --ezy-card-shadow: 0px 6px 44px rgba(173, 174, 197, 0.2);
+              --ezy-img-bg: #f8f8f8;
+              --ezy-border-color: rgba(0, 0, 0, 0.1);
+      
+              background-color: var(--bs-body-bg);
+              color: var(--bs-body-color);
+              overflow: hidden;
+              position: relative;
+              padding: 60px 0;
+              z-index: 1;
+            }
+      
+            @media (min-width: 768px) {
+              .ezy__epgrid9 {
+                padding: 100px 0;
+              }
+            }
+      
+            /* Gray Block Style */
+            .gray .ezy__epgrid9,
+            .ezy__epgrid9.gray {
+              /* Bootstrap variables */
+              --bs-body-bg: rgb(246, 246, 246);
+            }
+      
+            /* Dark Gray Block Style */
+            .dark-gray .ezy__epgrid9,
+            .ezy__epgrid9.dark-gray {
+              /* Bootstrap variables */
+              --bs-body-color: #ffffff;
+              --bs-body-bg: rgb(30, 39, 53);
+      
+              /* Easy Frontend variables */
+              --ezy-card-bg: rgb(30, 39, 53);
+              --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+              --ezy-img-bg: #242e3e;
+              --ezy-border-color: rgba(255, 255, 255, 0.15);
+            }
+      
+            /* Dark Block Style */
+            .dark .ezy__epgrid9,
+            .ezy__epgrid9.dark {
+              /* Bootstrap variables */
+              --bs-body-color: #ffffff;
+              --bs-body-bg: rgb(11, 23, 39);
+      
+              /* Easy Frontend variables */
+              --ezy-card-bg: rgb(30, 39, 53);
+              --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+              --ezy-img-bg: #242e3e;
+              --ezy-border-color: rgba(255, 255, 255, 0.15);
+            }
+      
+            .ezy__epgrid9-heading {
+              font-weight: 700;
+              font-size: 32px;
+              line-height: 1.2;
+              font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+              color: #DE3163;
+            }
+      
+            @media (min-width: 768px) {
+              .ezy__epgrid9-heading {
+                font-size: 48px;
+              }
+            }
+      
+            .ezy__epgrid9-item {
+              background-color: var(--ezy-card-bg);
+              box-shadow: var(--ezy-card-shadow);
+              border-radius: 10px;
+              border: 1px solid var(--ezy-border-color);
+            }
+            .ezy__epgrid9-img {
+              background-color: var(--ezy-img-bg);
+              border-radius: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-height: 265px;
+            }
+      
+            .ezy__epgrid9-item-badge {
+              background-color: #DE3163;
+              color: #fff;
+              position: absolute;
+              top: 15px;
+              left: 0;
+              border-radius: 0 7px 7px 0;
+            }
+            .ezy__epgrid9-fav-icon {
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              width: 40px;
+              height: 40px;
+              background-color: var(--ezy-card-bg);
+              color: var(--bs-body-color);
+              border-radius: 50%;
+              font-size: 16px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+            }
+            .ezy__epgrid9-cart-btn {
+              position: absolute;
+              bottom: 15px;
+              right: 0;
+              background-color: var(--ezy-theme-color);
+              color: #fff;
+              border-radius: 7px 0 0 7px;
+            }
+
+            
+            .ezy__epgrid9-cart-btn:hover {
+              background-color: #DE3163;
+              color: #fff;
+            }
+      
+            .ezy__epgrid9-content a {
+              text-decoration: none;
+              color: var(--bs-body-color);
+              transition: 0.4s;
+            }
+            .ezy__epgrid9-content a:hover {
+              color: #DE3163;
+            }
+            .ezy__epgrid9-content h6 {
+              font-size: 17px;
+            }
+            .ezy__epgrid9-rating {
+              font-size: 14px;
+              color: #ffd451;
+            }
+
+
+            .button3 {
+  background-color: white; 
+  color:#DE3163 ; 
+  border: 2px solid #DE3163;
+}
+
+.button3:hover {
+  background-color: #DE3163;
+  color: white;
+}
+
+
+
+      </style>
+
+
+    
+</div>
+
+ <style>
+.sub-heading{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;  
+   color: #DE3163; 
+    }
+
+    .headings{
+      font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: #DE3163;
+    }
+ </style>
+
+<div id="big" data-aos="zoom-in-left">
+
+  
+    <div class="container h-50 rounded-3 discout " style="background-color: #df074413;">
+        <h3 class="text-center mt-2 display-3 fw-bold sub-heading text-capitalize fs-1 fw-bolder"> big discout </h3>
+        <h1  class="text-center mt-2 display-5 fw-bold headings text-capitalize fs-1 fw-bolder">apple phone smart phone</h1>
+        <h5 class="text-center mt-3 ms-5"> <div class="mt-4 "><button class="button button3 rounded-3 text-capitalize fs-5 fw-bolder">shop now</button> </div></h5>
+         
+        
+
+       <div class="row  flex-*-nowrap">
+         <div class="col-sm-12 "><img class=" mb-0 align-self-end img-fluid" src="https://www.aptronixindia.com/media/iphone-15-plus/images/hero_large.png?1694035518952" height="200px" width="100%" alt=""></div>
+         
+       
+         
+       </div>
+      </div>
+
+
+  </div>
+
+
+
+  
+<div id="blog" data-aos="fade-right"
+data-aos-offset="300"
+data-aos-easing="ease-in-sine">
+    <style>.ezy__blog1_0qGpSZDN {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+      
+        /* easy frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #fff;
+        --ezy-card-shadow: 0 25px 41px rgba(89, 88, 109, 0.15);
+      
+        background-color: var(--bs-body-bg);
+        padding: 70px 0;
+        color: var(--bs-body-color);
+      }
+      
+      @media (min-width: 768px) {
+        .ezy__blog2_0qGpSZDN {
+          padding: 100px 0;
+        }
+      }
+      
+      /* Gray Block Style */
+      .gray .ezy__blog1_0qGpSZDN,
+      .ezy__blog1_0qGpSZDN.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      
+        /* easy frontend variables */
+        --ezy-card-bg: #fff;
+        --ezy-card-shadow: 0px 8px 44px rgba(182, 198, 222, 0.48);
+      }
+      
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__blog1_0qGpSZDN,
+      .ezy__blog1_0qGpSZDN.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(241, 241, 241);
+        --bs-body-bg: rgb(30, 39, 53);
+      
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(11, 23, 39);
+        --ezy-card-shadow: none;
+      }
+      
+      /* Dark Block Style */
+      .dark .ezy__blog1_0qGpSZDN,
+      .ezy__blog1_0qGpSZDN.dark {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(255, 255, 255);
+        --bs-body-bg: rgb(11, 23, 39);
+      
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: none;
+      }
+      
+      /* heading and sub-heading */
+      .ezy__blog1_0qGpSZDN-heading{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1;
+        color: var(--bs-body-color);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+      }
+      
+      .ezy__blog1_0qGpSZDN-sub-heading {
+        color: var(--bs-body-color);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        opacity: 0.8;
+        
+      }
+
+      heading-blog{
+        font-family:   Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+      
+      @media (min-width: 991px) {
+        .ezy__blog1_0qGpSZDN-heading {
+          font-size: 45px;
+        }
+      }
+      
+      .ezy__blog1_0qGpSZDN-post {
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+      }
+      
+      .ezy__blog1_0qGpSZDN-calendar {
+        background-color: #DE3163;
+        color: #ece3e5;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 24px;
+        border-radius: 0 0 10px 0;
+      }
+      
+      .ezy__blog1_0qGpSZDN-title {
+        font-weight: 500;
+        margin-top: 0 !important;
+        color: var(--bs-body-color);
+      }
+      
+      .ezy__blog1_0qGpSZDN-description {
+        color: var(--bs-body-color);
+        opacity: 0.6;
+      }
+      
+      .ezy__blog1_0qGpSZDN-btn {
+        padding: 12px 30px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+      
+      .ezy__blog1_0qGpSZDN-btn:hover {
+        color: #ffffff;
+        background-color: #DE3163;
+      }
+      
+      .ezy__blog1_0qGpSZDN-btn-read-more {
+        padding: 7px 20px;
+        color: var(--bs-body-color);
+        border-color: var(--ezy-theme-color);
+      }
+      
+      .ezy__blog1_0qGpSZDN-btn-read-more:hover {
+        background-color: #DE3163;
+        color: #ffffff;
+      }
+      
+      .ezy__blog1_0qGpSZDN-author a {
+        color: var(--ezy-theme-color);
+      }
+      
+       .heading-blog{
+        font-family:   Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #DE3163;
+       }
+      </style>
+      
+      
+       <section class="ezy__blog1_0qGpSZDN mt-5">
+         <h2 class="h2 display-4 fw-bold text-center mt-5 heading-blog mt-4  text-capitalize fs-1 fw-bolder"> blog</h2>
+        <div class="container">
+          <div class="row flex-*-nowrap align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+              <div class="px-lg-5">
+                <h2 class="ezy__blog1_0qGpSZDN-heading mb-3">A Guide to Latest in Fashion</h2>
+                <p class="ezy__blog1_0qGpSZDN-sub-heading mb-5">
+                  Vitae bibendum egestas magna sit elit non. Netus volutpat dignissim pharetra felis. Orci commodo mauris
+                  adipiscing semper amet.
+                </p>
+                <a href="#!" class="btn text-white"> <button class="button button3 rounded-3 text-capitalize fs-5 fw-bolder">Read More</button></a>
+              </div>
+            </div>
+            <div class="col-lg-7 mt-4 mt-md-0">
+              <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                  <article class="ezy__blog1_0qGpSZDN-post h-100">
+                    <div class="position-relative">
+                      <img
+                        src="https://cdn.easyfrontend.com/pictures/blog/blog_13_2.jpg"
+                        alt=""
+                        class="img-fluid w-100"
+                      />
+                      <div class="position-absolute top-0 start-0 px-4 py-3 fw-bold ezy__blog1_0qGpSZDN-calendar ">
+                        26<br />Oct<br />2024
+                      </div>
+                    </div>
+                    <div class="p-3 p-md-4">
+                      <p class="ezy__blog1_0qGpSZDN-author">By <a href="" class="text-decoration-none">Abraham Leo</a></p>
+                      <h4 class="mt-3 ezy__blog1_0qGpSZDN-title fs-4 mb-3 text-capitalize">Lorem ipsum dolor sit, amet consectetur </h4>
+                      <p class="ezy__blog1_0qGpSZDN-description mb-4">
+                        It’s no secret that the digital industry is booming. From exciting startups.
+                      </p>
+                      <a href="" class=" btn text-white"><button class="button button3 rounded-3 text-capitalize fs-5 fw-bolder">Read More</button></a>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <article class="ezy__blog1_0qGpSZDN-post h-100">
+                    <div class="w-100 position-relative mx-auto">
+                      <img src="https://cdn.easyfrontend.com/pictures/blog/blog_3.jpg" alt="" class="img-fluid w-100" />
+                      <div class="position-absolute top-0 start-0 px-4 py-3 fw-bold ezy__blog1_0qGpSZDN-calendar">
+                        26<br />Oct<br />2024
+                      </div>
+                    </div>
+                    <div class="p-3 p-md-4">
+                      <p class="ezy__blog1_0qGpSZDN-author">By <a href="" class="text-decoration-none">Mahws Georgia</a></p>
+                      <h4 class="mt-3 ezy__blog1_0qGpSZDN-title fs-4 mb-3 text-capitalize">Lorem ipsum dolor sit, amet consectetur </h4>
+                      <p class="ezy__blog1_0qGpSZDN-description mb-4">
+                        Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores.
+                      </p>
+                      <a href="" class="btn   text-white"><button class="button button3 rounded-3 text-capitalize fs-5 fw-bolder">Read More</button></a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      
+      
+      
+      
+  </div>
+  
+  
+
+
+
+ <section   class="mb-5" style="background-color:#df074413;" data-aos="fade-up"
+ data-aos-anchor-placement="top-bottom">
+<div class="container lg-h-25-lxx-h-50">
+  
+       <div class="row justify-content-between text-center">
+           <div class="col-sm-3 mt-3 rounded-circle"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512 " height="100px"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#DE3163" class="rounded-circle" d="M48 0C21.5 0 0 21.5 0 48L0 368c0 26.5 21.5 48 48 48l16 0c0 53 43 96 96 96s96-43 96-96l128 0c0 53 43 96 96 96s96-43 96-96l32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64 0-32 0-18.7c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7L416 96l0-48c0-26.5-21.5-48-48-48L48 0zM416 160l50.7 0L544 237.3l0 18.7-128 0 0-96zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg> <h3 class="mt-2  text-capitalize fs-2 fw-bolder"> <b>free delivery</b></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  </p>
+          </div>
+           <div class="col-sm-3 mt-3 rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="100px"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#DE3163" d="M312 24l0 10.5c6.4 1.2 12.6 2.7 18.2 4.2c12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17c-10.9-2.9-21.1-4.9-30.2-5c-7.3-.1-14.7 1.7-19.4 4.4c-2.1 1.3-3.1 2.4-3.5 3c-.3 .5-.7 1.2-.7 2.8c0 .3 0 .5 0 .6c.2 .2 .9 1.2 3.3 2.6c5.8 3.5 14.4 6.2 27.4 10.1l.9 .3s0 0 0 0c11.1 3.3 25.9 7.8 37.9 15.3c13.7 8.6 26.1 22.9 26.4 44.9c.3 22.5-11.4 38.9-26.7 48.5c-6.7 4.1-13.9 7-21.3 8.8l0 10.6c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-11.4c-9.5-2.3-18.2-5.3-25.6-7.8c-2.1-.7-4.1-1.4-6-2c-12.6-4.2-19.4-17.8-15.2-30.4s17.8-19.4 30.4-15.2c2.6 .9 5 1.7 7.3 2.5c13.6 4.6 23.4 7.9 33.9 8.3c8 .3 15.1-1.6 19.2-4.1c1.9-1.2 2.8-2.2 3.2-2.9c.4-.6 .9-1.8 .8-4.1l0-.2c0-1 0-2.1-4-4.6c-5.7-3.6-14.3-6.4-27.1-10.3l-1.9-.6c-10.8-3.2-25-7.5-36.4-14.4c-13.5-8.1-26.5-22-26.6-44.1c-.1-22.9 12.9-38.6 27.7-47.4c6.4-3.8 13.3-6.4 20.2-8.2L264 24c0-13.3 10.7-24 24-24s24 10.7 24 24zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5L192 512 32 512c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l36.8 0 44.9-36c22.7-18.2 50.9-28 80-28l78.3 0 16 0 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l120.6 0 119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384c0 0 0 0 0 0l-.9 0c.3 0 .6 0 .9 0z"/></svg> <h3 class="mt-2 text-capitalize fs-2 fw-bolder"> <b>pay monthly 0 APR </b>  </h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p></div>
+           <div class="col-sm-3 mt-3 rounded-circle"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="100px"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#DE3163" d="M96 64a64 64 0 1 1 128 0A64 64 0 1 1 96 64zm48 320l0 96c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-192.2L59.1 321c-9.4 15-29.2 19.4-44.1 10S-4.5 301.9 4.9 287l39.9-63.3C69.7 184 113.2 160 160 160s90.3 24 115.2 63.6L315.1 287c9.4 15 4.9 34.7-10 44.1s-34.7 4.9-44.1-10L240 287.8 240 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-96-32 0z"/></svg> <b> <h3 class="mt-2 text-capitalize fs-2 fw-bolder">porosnlits </b></h3> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p></div>
+  
+           
+       </div>
+      </div>
+  </section>
+
+
+  <!-- and the sries s   -->
+
+
+  
+
+  
+
+
+  <!-- footer secon  start -->
+
+
+
+  <section class="ezy__footer15 " style="background-color: #DE3163;">
+    <div class="container">
+      <div class="row text-center text-sm-start mb-md-5">
+        <div class="col-lg-4">
+          <h2 class="fw-bold">electroni.com</h2>
+          <div class="row">
+            <div class="col-12 col-lg-7">
+              <p class="ezy__footer15-text opacity-50 mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+  
+          <h5 class="mt-4 mt-lg-5 mb-3">Follow Us</h5>
+          <ul class="ezy__footer15-social justify-content-center justify-content-sm-start nav mb-4 mb-lg-0">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+          <h5 class="mb-3">Menu</h5>
+          <ul class="nav flex-column ezy__footer15-quick-links">
+            <li>
+              <a href="#!">About</a>
+            </li>
+            <li>
+              <a href="#!">Blog</a>
+            </li>
+            <li>
+              <a href="#!">Contact</a>
+            </li>
+            <li>
+              <a href="#!">Pages</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+          <h5 class="mb-3">Blog</h5>
+          <ul class="nav flex-column ezy__footer15-quick-links">
+            <li>
+              <a href="#!">Quote</a>
+            </li>
+            <li>
+              <a href="#!">Post</a>
+            </li>
+            <li>
+              <a href="#!">Video Post</a>
+            </li>
+            <li>
+              <a href="#!">Gallery</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+          <h5 class="mb-3">Company</h5>
+          <ul class="nav flex-column ezy__footer15-quick-links">
+            <li>
+              <a href="#!">Select</a>
+            </li>
+            <li>
+              <a href="#!">Services</a>
+            </li>
+            <li>
+              <a href="#!">Payment</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+          <h5 class="mb-3">Services</h5>
+          <ul class="nav flex-column ezy__footer15-quick-links">
+            <li>
+              <a href="#!">Option</a>
+            </li>
+            <li>
+              <a href="#!">Privling Page</a>
+            </li>
+            <li>
+              <a href="#!">Account</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="row d-flex justify-content-between align-items-center text-center text-lg-start">
+        <div class="col-md-6">
+          <p class="opacity-50 mb-0 mt-1">Copyright &copy; eletronic.com, All rights reserved</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="ezy__footer15-nav nav justify-content-center justify-content-md-end mt-1">
+            <li class="nav-item">
+              <a class="opacity-50 nav-link" href="#!">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="opacity-50 nav-link" href="#!">Security</a>
+            </li>
+            <li class="nav-item">
+              <a class="opacity-50 nav-link" href="#!">Terms</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  .ezy__footer15 {
+    /* Bootstrap variables */
+    --bs-body-color: rgb(255, 255, 255) ;
+    --bs-body-bg: ;
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: #bbb5b5ef;
+    --ezy-theme-color-rgb: 13, 110, 253;
+    --ezy-body-color-invert:  #ff2556;
+    --ezy-icon-shadow: 0 7px 16px 0 rgba(39, 42, 52, 0.12);
+    --ezy-hr-color: rgba(117, 117, 117, 0.39);
+  
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    padding: 60px 0;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__footer15 {
+      padding: 80px 0;
+    }
+  }
+  
+  /* Gray Block Style */
+  .gray .ezy__footer15,
+  .ezy__footer15.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+  
+    /* Easy Frontend variables */
+    --ezy-body-color-invert: rgb(255, 255, 255);
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__footer15,
+  .ezy__footer15.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(64, 65, 86);
+  
+    /* Easy Frontend variables */
+    --ezy-body-color-invert: rgb(46, 47, 65);
+    --ezy-icon-shadow: none;
+  }
+  
+  .dark .ezy__footer15,
+  .ezy__footer15.dark {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(46, 47, 65);
+  
+    /* Easy Frontend variables */
+    --ezy-body-color-invert: rgb(64, 65, 86);
+    --ezy-icon-shadow: none;
+  }
+  
+  .ezy__footer15-nav .nav-link {
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__footer15-nav .nav-link:hover {
+    color: var(--bs-body-color);
+    opacity: 0.8;
+  }
+  
+  .ezy__footer15-social li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  
+  .ezy__footer15-social li:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .ezy__footer15-social li a {
+    color: var(--bs-body-color);
+    background-color: var(--ezy-body-color-invert);
+    box-shadow: var(--ezy-icon-shadow);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: opacity 0.35s ease-in-out;
+  }
+  
+  .ezy__footer15-social li a:hover {
+    background-color: var(--ezy-theme-color);
+    color: #ffffff;
+  }
+  
+  .ezy__footer15-nav .nav-link {
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__footer15-nav .nav-link:hover {
+    color: var(--bs-body-color);
+    opacity: 0.8;
+  }
+  
+  .ezy__footer15-quick-links li {
+    margin-bottom: 8px;
+  }
+  
+  .ezy__footer15-quick-links li a {
+    color: var(--bs-body-color);
+    opacity: 0.5;
+    text-decoration: none;
+  }
+  
+  .ezy__footer15-quick-links li a:hover {
+    color: var(--bs-body-color);
+    opacity: 1;
+  }
+  
+  .ezy__footer15 hr {
+    background-color: var(--ezy-hr-color);
+  }
+  </style>
+
+<script>
+  AOS.init();
+</script>  
+<!-- the and  teb-conteents -->
+</body>
+</html>
